@@ -5,7 +5,8 @@ while ind < len(my_list):
         ind += 1
         continue
     elif my_list[ind] < 0:
-        break
+        ind += 1
+        continue # либо поставить break
     elif my_list[ind] > 0:
         print(my_list[ind])
         ind += 1
